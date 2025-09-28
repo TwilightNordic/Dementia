@@ -2,7 +2,5 @@
   publish = "public"
   command = "hugo"
 
-[context.production.environment]
-  HUGO_VERSION = "0.121.1"
-  HUGO_ENV = "production"
-  HUGO_ENABLEGITINFO = "true"
+[build.environment]
+  HUGO_VERSION = "0.150.1"
