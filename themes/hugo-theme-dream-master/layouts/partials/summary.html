@@ -1,0 +1,18 @@
+
+<div class="dementia-summary bg-white rounded-lg shadow-md flex flex-col items-center justify-between p-2 h-full w-full" style="width: 100%; box-sizing: border-box;">
+  <div style="width: 100%; margin-bottom: 12px;">
+    <div style="width:100%; aspect-ratio: 4/3; overflow:hidden; border-radius:12px;">
+      {{ $img := .Params.image }}
+      {{ if $img }}
+        <img src="{{ $img }}" alt="{{ $.Title }}" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy" onerror="this.src='/images/placeholder.png'" />
+      {{ else }}
+        <img src="/images/placeholder.png" alt="placeholder" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy" />
+      {{ end }}
+    </div>
+  </div>
+  <div style="text-align: center; width: 100%;">
+    <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 6px;">{{ .Params.subtitle }}</h3>
+    <p style="color: #555; font-size: 1rem; margin-bottom: 8px;">{{ .Params.snippet }}</p>
+    <a href="{{ .RelPermalink }}" style="color: #4B2E83; text-decoration: underline; font-size: 1rem;">Read more</a>
+  </div>
+</div>

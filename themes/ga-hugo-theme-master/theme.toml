@@ -1,0 +1,10 @@
+
+name = "Twilight Theme"
+license = "MIT"
+description = "A theme for Dementia"
+tags = []
+features = []
+min_version = "0.25.1"
+
+[author]
+  name = "Twilight"
